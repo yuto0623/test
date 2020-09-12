@@ -3,40 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>htmlの練習</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
   </head>
-
   <body>
     <header>
       <ul>
         <li>
-          <a href="index.html"><img src="img/logo.png" class="logo" /></a>
+          <img src="img/H1.png" class="logo" />
         </li>
         <li>
-          <a href="basho.html">今まで行った場所</a>
-        </li>
-        <li>
-          お問い合わせ
-        </li>
-        <li>
-          その他
+          <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+          <input type="checkbox" id="drawer-check" class="drawer-hidden" />
+          <!-- ハンバーガーアイコン -->
+          <label for="drawer-check" class="drawer-open"><span></span></label>
+          <ul class="navi">
+            <li>
+              <a href="index.html">
+                <img src="img/nav_icon-1.png" />
+                <p>HOME</p>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <img src="img/nav_icon-2.png" />
+                <p>MAIL</p>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <img src="img/nav_icon-2.png" />
+                <p>MENU</p>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <img src="img/nav_icon-2.png" />
+                <p>MENU</p>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <img src="img/nav_icon-2.png" />
+                <p>MENU</p>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <img src="img/nav_icon-2.png" />
+                <p>MENU</p>
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
     </header>
 
-    <nav>left</nav>
+    <nav>
+      <ul class="navi">
+        <li>
+          <a href="index.html">
+            <img src="img/nav_icon-1.png" />
+            <p>HOME</p>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            <img src="img/nav_icon-2.png" />
+            <p>MAIL</p>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            <img src="img/nav_icon-2.png" />
+            <p>MENU</p>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            <img src="img/nav_icon-2.png" />
+            <p>MENU</p>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            <img src="img/nav_icon-2.png" />
+            <p>MENU</p>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            <img src="img/nav_icon-2.png" />
+            <p>MENU</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer>
+      <p>コピーライト的な何か</p>
+    </footer>
 
     <main>
-      <a
-        href="https://www.google.co.jp/maps/place/さか・なぎさ公園/@34.349158,132.5067236,19z/data=!4m5!3m4!1s0x355aa15dccd9f435:0xb90e186f13e31cb1!8m2!3d34.3487754!4d132.5068941?hl=ja"
-        target="_blank"
-        rel="noopener"
-        ><img src="img/saka_nagisa.jpg" width="100%" />
-        <p>さか・なぎさ公園</p>
-      </a>
+      <img src="img/hanabi.jpg" alt="花火の写真" class="hanabi" />
     </main>
-    <aside>right</aside>
-    <footer>footer</footer>
   </body>
 </html>

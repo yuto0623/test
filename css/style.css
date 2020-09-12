@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template:
+      "header main main" 100px
+      "nav    main main" 600px
+      "footer main main" 1fr
+      /200px;
+  }
+}
+/* ヘッダー */
+header {
+  grid-area: header;
+  background-color: rgb(47, 52, 121);
+  z-index: 99;
+}
+
+header .logo {
+  display: block;
+  height: 60px;
+}
+
+header ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+header ul li:first-child {
+  margin-right: auto;
+}
+
+.drawer-hidden {
+  display: none;
+}
+
+.drawer-open {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100; /* 重なり順を一番上に */
+  cursor: pointer;
+}
+
+.drawer-open span,
+.drawer-open span:before,
+.drawer-open span:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #fff;
+  transition: 0.5s;
+  position: absolute;
+}
+
+/* 三本線のうち一番上の棒の位置調整 */
+.drawer-open span:before {
+  bottom: 8px;
+}
+
+/* 三本線のうち一番下の棒の位置調整 */
+.drawer-open span:after {
+  top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer-check:checked ~ .drawer-open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer-check:checked ~ .drawer-open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#drawer-check:checked ~ .drawer-open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+header .navi {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  top: -100%;
+  transition: .5s;
+  background: rgb(47, 52, 121);
+}
+
+header .navi li {
+  list-style-type: none;
+  margin: 8px;
+}
+
+header .navi li:hover {
+  opacity: 0.7;
+}
+
+header .navi li a {
+  text-decoration: none;
+}
+
+header .navi li img {
+  width: 40px;
+}
+
+header .navi li p {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+
+#drawer-check:checked ~ .navi {
+  top: 60px;
+}
+
+
+@media screen and (min-width: 768px) {
+  header .logo {
+    display: block;
+    height: 80px;
+  }
+  .drawer-open {
+    display: none;
+  }
+}
+
+/* ナビゲーション */
+nav {
+  grid-area: nav;
+  background-color: rgb(47, 52, 121);
+}
+
+nav .navi {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  bottom: 100%;
+  transition: .5s;
+}
+
+nav .navi li {
+  list-style-type: none;
+  margin: 8px;
+}
+
+nav .navi li:hover {
+  opacity: 0.7;
+}
+
+nav .navi li a {
+  text-decoration: none;
+}
+
+nav .navi li img {
+  width: 40px;
+}
+
+nav .navi li p {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+
+@media screen and (min-width: 768px) {
+  nav .navi {
+    bottom: 0;
+    position: relative;
+  }
+  nav .navi li img {
+    width: 80px;
+  }
+}
+/* フッター */
+footer {
+  grid-area: footer;
+  background-color: rgb(47, 52, 121);
+}
+
+footer p {
+  color: white;
+}
+
+/* メイン */
+main {
+  grid-area: main;
+}
+
+main .hanabi {
+  width: 100%;
+}
