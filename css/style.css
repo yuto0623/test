@@ -36,14 +36,14 @@ header .logo {
   height: 60px;
 }
 
-header ul {
+header .header {
   padding: 0;
   margin: 0;
   list-style-type: none;
   display: flex;
 }
 
-header ul li:first-child {
+header .header .first {
   margin-right: auto;
 }
 
@@ -104,17 +104,22 @@ header ul li:first-child {
 header .navi {
   padding: 0;
   margin: 0;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   position: fixed;
   top: -100%;
+  left: 0;
   transition: .5s;
   background: rgb(47, 52, 121);
 }
 
 header .navi li {
   list-style-type: none;
-  margin: 8px;
+  margin: 0px 5px;
+  text-align: center;
+  
 }
 
 header .navi li:hover {
