@@ -5,108 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.typekit.net/arg2fhl.css" />
+    <title>See Cafe</title>
   </head>
   <body>
-    <header>
-      <ul class="header">
-        <li class="first">
-          <img src="img/H1.png" class="logo" />
-        </li>
-        <li>
-          <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
-          <input type="checkbox" id="drawer-check" class="drawer-hidden" />
-          <!-- ハンバーガーアイコン -->
-          <label for="drawer-check" class="drawer-open"><span></span></label>
-          <ul class="navi">
+    <!-- ヘッダー -->
+    <header class="header">
+      <h1 class="logo">
+        <a href="index.html"><img src="img/h1_logo.png" alt="See Cafe" /></a>
+      </h1>
+      <!-- ハンバーガーメニュー -->
+      <div class="hamburger_menu">
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input type="checkbox" id="hamburger_check" class="hamburger_hidden" />
+        <!-- ハンバーガーアイコン -->
+        <label for="hamburger_check" class="hamburger_open"
+          ><span></span
+        ></label>
+
+        <!-- メニュー -->
+        <nav class="hamburger_content">
+          <ul class="hamburger_list">
+            <a href="index.html">
+              <li class="hamburger_item">
+                <p class="p_border">Home</p>
+              </li>
+            </a>
+            <a href="#">
+              <li class="hamburger_item">
+                <p class="p_border">Menu</p>
+              </li>
+            </a>
+            <a href="#">
+              <li class="hamburger_item">
+                <p class="p_border">Gallery</p>
+              </li>
+            </a>
+            <a href="#">
+              <li class="hamburger_item">
+                <p class="p_border">About</p>
+              </li>
+            </a>
+            <!-- SNSボタン -->
             <li>
-              <a href="index.html">
-                <img src="img/nav_icon-1.png" />
-                <p>HOME</p>
-              </a>
-            </li>
-            <li>
-              <a href="index.html">
-                <img src="img/nav_icon-2.png" />
-                <p>MAIL</p>
-              </a>
-            </li>
-            <li>
-              <a href="index.html">
-                <img src="img/nav_icon-2.png" />
-                <p>MENU</p>
-              </a>
-            </li>
-            <li>
-              <a href="index.html">
-                <img src="img/nav_icon-2.png" />
-                <p>MENU</p>
-              </a>
-            </li>
-            <li>
-              <a href="index.html">
-                <img src="img/nav_icon-2.png" />
-                <p>MENU</p>
-              </a>
-            </li>
-            <li>
-              <a href="index.html">
-                <img src="img/nav_icon-2.png" />
-                <p>MENU</p>
-              </a>
+              <ul class="sns_button_list">
+                <li class="sns_button">
+                  <a href="https://twitter.com/"
+                    ><img src="img/twitter.png" alt="twitter"
+                  /></a>
+                </li>
+                <li class="sns_button">
+                  <a href="https://www.instagram.com/"
+                    ><img src="img/Instagram.png" alt="Instagram"
+                  /></a>
+                </li>
+                <li class="sns_button">
+                  <a href="https://www.facebook.com/"
+                    ><img src="img/facebook.png" alt="facebook"
+                  /></a>
+                </li>
+              </ul>
             </li>
           </ul>
-        </li>
-      </ul>
+        </nav>
+      </div>
     </header>
 
-    <nav>
-      <ul class="navi">
-        <li>
-          <a href="index.html">
-            <img src="img/nav_icon-1.png" />
-            <p>HOME</p>
-          </a>
-        </li>
-        <li>
-          <a href="index.html">
-            <img src="img/nav_icon-2.png" />
-            <p>MAIL</p>
-          </a>
-        </li>
-        <li>
-          <a href="index.html">
-            <img src="img/nav_icon-2.png" />
-            <p>MENU</p>
-          </a>
-        </li>
-        <li>
-          <a href="index.html">
-            <img src="img/nav_icon-2.png" />
-            <p>MENU</p>
-          </a>
-        </li>
-        <li>
-          <a href="index.html">
-            <img src="img/nav_icon-2.png" />
-            <p>MENU</p>
-          </a>
-        </li>
-        <li>
-          <a href="index.html">
-            <img src="img/nav_icon-2.png" />
-            <p>MENU</p>
-          </a>
-        </li>
+    <main></main>
+
+    <!-- フッター -->
+    <footer class="footer">
+      <!-- フッターメニュー -->
+      <ul class="footer_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">About</a></li>
+        <li>&copy; Copyright 2020 shintani yuto.</li>
       </ul>
-    </nav>
-
-    <footer>
-      <p>コピーライト的な何か</p>
     </footer>
-
-    <main>
-      <img src="img/hanabi.jpg" alt="花火の写真" class="hanabi" />
-    </main>
   </body>
 </html>
