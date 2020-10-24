@@ -172,6 +172,7 @@ main {
   display: flex;
   align-items: center;
   height: 70px;
+  padding: 0;
 }
 
 .footer_menu li {
