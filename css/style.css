@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5px 0 10px;
+  padding: 0;
   height: 60px;
   background: rgb(247, 225, 198);
   width: 100%;
@@ -25,6 +25,7 @@
 .logo img {
   height: 50px;
   z-index: 100;
+  margin-left: 10px;
 }
 
 .hamburger_hidden {
@@ -87,11 +88,13 @@
   background: rgb(247, 225, 198);
   transition: 0.3s;
   opacity: 0;
+  visibility: hidden;
 }
 
 #hamburger_check:checked ~ .hamburger_content {
   left: 0;
   opacity: 1;
+  visibility: visible;
 }
 
 .hamburger_list {
@@ -118,7 +121,7 @@
 .p_border {
   display: flex;
   align-items: center;
-  width: 335px;
+  width: 300px;
 }
 
 .p_border:before,
@@ -145,7 +148,7 @@
   justify-content: center;
   align-items: center;
   color: rgb(0, 0, 0);
-  margin: 0 20px;
+  margin: 0;
 }
 
 .sns_button_list {
@@ -153,6 +156,8 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 10px;
+  width: 300px;
+
 }
 
 .sns_button {
@@ -180,14 +185,15 @@ main {
 /* --- フッター --- */
 .footer {
   background: rgb(218, 197, 197);
-  height: 30px;
   display: flex;
 }
 
 .footer_menu {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0;
+  margin: 6px;
   width: 100%;
 }
 
