@@ -7,13 +7,34 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/arg2fhl.css" />
     <script>
-      (function(d) {
+      (function (d) {
         var config = {
-          kitId: 'lxy7uwj',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            kitId: "lxy7uwj",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
     <title>See Cafe</title>
@@ -36,26 +57,26 @@
         <!-- メニュー -->
         <nav class="hamburger_content">
           <ul class="hamburger_list">
-            <a href="index.html">
-              <li class="hamburger_item">
-                <p class="p_border">Home</p>
-              </li>
-            </a>
-            <a href="#">
-              <li class="hamburger_item">
-                <p class="p_border">Menu</p>
-              </li>
-            </a>
-            <a href="#">
-              <li class="hamburger_item">
-                <p class="p_border">Gallery</p>
-              </li>
-            </a>
-            <a href="#">
-              <li class="hamburger_item">
-                <p class="p_border">About</p>
-              </li>
-            </a>
+            <li class="hamburger_item">
+              <a href="index.html">
+                <p class="p_border p_border1">Home</p>
+              </a>
+            </li>
+            <li class="hamburger_item">
+              <a href="#">
+                <p class="p_border p_border2">Menu</p>
+              </a>
+            </li>
+            <li class="hamburger_item">
+              <a href="#">
+                <p class="p_border p_border3">Gallery</p>
+              </a>
+            </li>
+            <li class="hamburger_item">
+              <a href="#">
+                <p class="p_border p_border4">About</p>
+              </a>
+            </li>
             <!-- SNSボタン -->
             <li>
               <ul class="sns_button_list">
