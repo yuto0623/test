@@ -1,2 +1,5 @@
 @charset "utf-8";
 
+.slick-dots li button:before {
+  font-size: 30px;
+}
