@@ -208,7 +208,6 @@ body {
 
 /* --- メイン --- */
 main {
-  height: 500px;
 }
 
 .slick {
@@ -252,7 +251,6 @@ main {
 .footer_sns_button_list {
   padding: 0;
   display: none;
-
 }
 
 .footer_sns_button {
