@@ -208,6 +208,7 @@ body {
 
 /* --- メイン --- */
 main {
+  width: 100%;
 }
 
 .slick {
@@ -217,6 +218,11 @@ main {
 
 .slick img {
   width: 100%;
+}
+
+.main_box {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* --- フッター --- */
