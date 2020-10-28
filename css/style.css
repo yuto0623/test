@@ -211,6 +211,15 @@ main {
   height: 500px;
 }
 
+.slick {
+  margin: 0;
+  padding: 0;
+}
+
+.slick img {
+  width: 100%;
+}
+
 /* --- フッター --- */
 .footer {
   background: rgb(218, 197, 197);
@@ -278,5 +287,12 @@ main {
 @media screen and (min-width: 769px) {
   .footer_sns_button_list {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer_menu .footer_menu_list {
+    transform: scale(0.6);
+    margin-right: -20px;
   }
 }
