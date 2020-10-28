@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+/* --- ページ全体 --- */
+body {
+  background-color: #fff;
+}
+
 /* --- ヘッダー --- */
 .header {
   display: flex;
