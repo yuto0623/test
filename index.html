@@ -13,43 +13,21 @@
     <!-- Webフォント -->
     <link rel="stylesheet" href="https://use.typekit.net/arg2fhl.css" />
     <script>
-      (function (d) {
+      (function(d) {
         var config = {
-            kitId: "lxy7uwj",
-            scriptTimeout: 3000,
-            async: true,
-          },
-          h = d.documentElement,
-          t = setTimeout(function () {
-            h.className =
-              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-          }, config.scriptTimeout),
-          tk = d.createElement("script"),
-          f = false,
-          s = d.getElementsByTagName("script")[0],
-          a;
-        h.className += " wf-loading";
-        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
-        tk.async = true;
-        tk.onload = tk.onreadystatechange = function () {
-          a = this.readyState;
-          if (f || (a && a != "complete" && a != "loaded")) return;
-          f = true;
-          clearTimeout(t);
-          try {
-            Typekit.load(config);
-          } catch (e) {}
-        };
-        s.parentNode.insertBefore(tk, s);
+          kitId: 'lxy7uwj',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     </script>
+    <!-- /Webフォント -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
     ></script>
-
-    <!-- /Webフォント -->
     <title>See Cafe</title>
   </head>
   <body>
@@ -125,16 +103,20 @@
       <div class="main_container">
         <div class="main_box_1">
           <div class="menu_box">
-            <h2>Menu</h2>
-            <img src="img/menu/avocado_rice.png" alt="アボカドライスの写真" />
-            <p>当店で使用している野菜はすべて農家から直接仕入れています。</p>
-            <p>採れたての新鮮な野菜をお楽しみください！</p>
+            <a href="menu.html">
+              <h2>Menu</h2>
+              <img src="img/menu/avocado_rice.png" alt="アボカドライスの写真" />
+              <p>当店で使用している野菜はすべて農家から直接仕入れています</p>
+              <p>採れたての新鮮な野菜をお楽しみください！</p>
+            </a>
           </div>
           <div class="menu_box">
-            <h2>Gallery</h2>
-            <img src="img/gallery/gallery01.png" alt="アボカドライスの写真" />
-            <p>海の見えるカフェSee Cafeの魅力を集めたフォトギャラリーです</p>
-            <p>ぜひご覧ください！</p>
+            <a href="gallery.html">
+              <h2>Gallery</h2>
+              <img src="img/gallery/gallery01.png" alt="アボカドライスの写真" />
+              <p>海の見えるカフェSee Cafeの魅力を集めたフォトギャラリーです</p>
+              <p>ぜひご覧ください！</p>
+            </a>
           </div>
         </div>
       </div>
