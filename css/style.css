@@ -28,7 +28,7 @@ body {
 }
 
 .logo img {
-  height: 50px;
+  height: 30px;
   z-index: 100;
   margin: 7px 0 auto 10px;
 }
@@ -176,13 +176,19 @@ body {
 }
 
 @media screen and (max-width: 350px) {
-  .logo img {
+  .p_border {
     width: 200px;
-    height: auto;
+  }
+  .p_border:before,
+  .p_border:after {
+    width: 100px;
   }
 }
 
 @media screen and (min-width: 769px) {
+  .logo img {
+    height: 50px;
+  }
   .hamburger_open {
     display: none;
   }
