@@ -13,13 +13,34 @@
     <!-- Webフォント -->
     <link rel="stylesheet" href="https://use.typekit.net/arg2fhl.css" />
     <script>
-      (function(d) {
+      (function (d) {
         var config = {
-          kitId: 'lxy7uwj',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            kitId: "lxy7uwj",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
     <!-- /Webフォント -->
@@ -96,6 +117,16 @@
     <!-- メイン -->
     <main>
       <h2 class="menu_gallery_about">Menu</h2>
+      <h3 class="food">Food</h3>
+      <ul class="menu_list">
+        <li class="menu_item">
+          <img src="img/menu/omelette_rice.png" alt="オムライスの写真" />
+          <div class="menu_explanation">
+            <p>オムライス</p>
+            <p>870yen</p>
+          </div>
+        </li>
+      </ul>
     </main>
     <!-- /メイン -->
 

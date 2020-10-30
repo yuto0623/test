@@ -4,6 +4,33 @@
 body {
   background-color: rgb(255, 255, 255);
 }
+
+.menu_gallery_about {
+  font-family: tbcinergothic-std, sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.menu_gallery_about::before,
+.menu_gallery_about::after {
+  border-top: 1px solid #000;
+  width: 100px;
+  content: "";
+  flex-grow: 1;
+  display: block;
+}
+
+.menu_gallery_about::before {
+  margin: 0 1vw 0 10vw;
+}
+
+.menu_gallery_about::after {
+  margin: 0 10vw 0 1vw;
+}
+
 /* --- /ページ全体 --- */
 
 
@@ -315,15 +342,7 @@ main {
 /* --- /メインHome --- */
 
 /* --- メインMenu --- */
-
-/* --- /メインMenu --- */
-
-/* --- メインGallery --- */
-
-/* --- /メインGallery --- */
-
-/* --- メインAbout --- */
-.menu_gallery_about {
+.food {
   font-family: tbcinergothic-std, sans-serif;
   text-align: center;
   display: flex;
@@ -332,8 +351,8 @@ main {
   padding: 10px;
 }
 
-.menu_gallery_about::before,
-.menu_gallery_about::after {
+.food::before,
+.food::after {
   border-top: 1px solid #000;
   width: 100px;
   content: "";
@@ -341,13 +360,40 @@ main {
   display: block;
 }
 
-.menu_gallery_about::before {
-  margin: 0 1vw 0 10vw;
+.food::before {
+  margin: 0 1vw 0 50vw;
+  width: 10vw;
 }
 
-.menu_gallery_about::after {
+.food::after {
   margin: 0 10vw 0 1vw;
+  width: 10vw;
 }
+
+.menu_list {
+  list-style-type: none;
+}
+
+.menu_item {
+  display: flex;
+}
+
+.menu_item img {
+  width: 40vw;
+  height: auto;
+}
+
+.menu_explanation {
+  margin: 0 10vw 0 0;
+}
+
+/* --- /メインMenu --- */
+
+/* --- メインGallery --- */
+
+/* --- /メインGallery --- */
+
+/* --- メインAbout --- */
 
 .about_box p {
   text-align: center;
