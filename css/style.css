@@ -4,6 +4,8 @@
 body {
   background-color: rgb(255, 255, 255);
 }
+/* --- /ページ全体 --- */
+
 
 /* --- ヘッダー --- */
 .header {
@@ -212,9 +214,13 @@ body {
   }
 }
 
+/* --- /ヘッダー --- */
+
+
 /* --- メインHome --- */
 main {
   width: 100%;
+  min-width: 20vh;
 }
 
 .slick {
@@ -287,11 +293,18 @@ main {
   text-align: center;
 }
 
+.menu_box p:last-child {
+  padding-bottom: 10px;
+}
+
 .main_box_1 img {
   width: 100%;
 }
 
 @media screen and (min-width: 769px) {
+  main {
+  margin-top: 60px;
+  }
   .main_box_1 {
     flex-flow: row;
   }
@@ -299,8 +312,65 @@ main {
     width: 40%;
   }
 }
+/* --- /メインHome --- */
 
 /* --- メインMenu --- */
+
+/* --- /メインMenu --- */
+
+/* --- メインGallery --- */
+
+/* --- /メインGallery --- */
+
+/* --- メインAbout --- */
+.menu_gallery_about {
+  font-family: tbcinergothic-std, sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.menu_gallery_about::before,
+.menu_gallery_about::after {
+  border-top: 1px solid #000;
+  width: 100px;
+  content: "";
+  flex-grow: 1;
+  display: block;
+}
+
+.menu_gallery_about::before {
+  margin: 0 1vw 0 10vw;
+}
+
+.menu_gallery_about::after {
+  margin: 0 10vw 0 1vw;
+}
+
+.about_box p {
+  text-align: center;
+  margin: 10px;
+}
+
+.address {
+  margin: 20px;
+}
+
+.google_map {
+  margin: 20px auto;
+  width: 100vw;
+  height: 70vh;
+}
+
+@media screen and (min-width: 769px) {
+  .google_map {
+    width: 80vw;
+  }
+}
+
+/* --- /メインAbout --- */
 
 /* --- フッター --- */
 .footer {
@@ -377,3 +447,4 @@ main {
     margin-right: -20px;
   }
 }
+/* --- /フッター --- */
