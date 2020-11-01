@@ -373,8 +373,6 @@ main {
 .menu_list {
   list-style-type: none;
   padding: 0;
-  margin-left: 5vw;
-  margin-right: 5vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -386,20 +384,20 @@ main {
 }
 
 .menu_item img {
-  width: 40%;
+  width: 200px;
   height: auto;
 }
 
 .menu_explanation {
-  width: 25vw;
+  width: 120px;
   margin: 0 2vw 0 2vw;
 }
 
 @media screen and (min-width: 769px) {
-  .menu_list {
-    margin-left: 10vw;
-    margin-right: 10vw;
-  }
+}
+
+@media screen and (max-width: 420px) {
+
 }
 
 /* --- /メインMenu --- */
