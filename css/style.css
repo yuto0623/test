@@ -372,19 +372,34 @@ main {
 
 .menu_list {
   list-style-type: none;
+  padding: 0;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu_item {
   display: flex;
+  max-width: 400px;
 }
 
 .menu_item img {
-  width: 40vw;
+  width: 40%;
   height: auto;
 }
 
 .menu_explanation {
-  margin: 0 10vw 0 0;
+  width: 25vw;
+  margin: 0 2vw 0 2vw;
+}
+
+@media screen and (min-width: 769px) {
+  .menu_list {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
 }
 
 /* --- /メインMenu --- */
