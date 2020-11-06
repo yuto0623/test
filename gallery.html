@@ -13,13 +13,34 @@
     <!-- Webフォント -->
     <link rel="stylesheet" href="https://use.typekit.net/arg2fhl.css" />
     <script>
-      (function(d) {
+      (function (d) {
         var config = {
-          kitId: 'lxy7uwj',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            kitId: "lxy7uwj",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
     <!-- /Webフォント -->
@@ -96,6 +117,28 @@
     <!-- メイン -->
     <main>
       <h2 class="menu_gallery_about">Gallery</h2>
+      <div class="gallery_list">
+        <div class="gallery_item">
+          <a href="img/gallery/gallery01.png">
+            <img src="img/gallery/gallery01.png" alt="" />
+          </a>
+        </div>
+        <div class="gallery_item">
+          <a href="img/gallery/gallery02.png">
+            <img src="img/gallery/gallery02.jpg" alt="" />
+          </a>
+        </div>
+        <div class="gallery_item">
+          <a href="img/gallery/gallery03.png">
+            <img src="img/gallery/gallery03.jpg" alt="" />
+          </a>
+        </div>
+        <div class="gallery_item">
+          <a href="img/gallery/gallery01.png">
+            <img src="img/gallery/gallery01.png" alt="" />
+          </a>
+        </div>
+      </div>
     </main>
     <!-- /メイン -->
 

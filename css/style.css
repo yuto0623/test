@@ -376,11 +376,14 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 1500px;
+  margin: 30px auto;
 }
 
 .menu_item {
   display: flex;
   max-width: 400px;
+  margin: 5px 0px;
 }
 
 .menu_item img {
@@ -391,6 +394,7 @@ main {
 .menu_explanation {
   width: 120px;
   margin: 0 2vw 0 2vw;
+  font-family: tbcinergothic-std, sans-serif;
 }
 
 @media screen and (min-width: 769px) {
@@ -403,6 +407,26 @@ main {
 /* --- /メインMenu --- */
 
 /* --- メインGallery --- */
+
+.gallery_list {
+  display: flex;
+  justify-content: center;
+  margin: 0 50px;
+  flex-wrap: wrap;
+}
+
+.gallery_item {
+  width: 400px;
+}
+
+.gallery_item a {
+  display: block;
+}
+
+.gallery_item img {
+  display: block;
+  width: 100%;
+}
 
 /* --- /メインGallery --- */
 
@@ -471,7 +495,7 @@ main {
 }
 
 .footer_sns_button img {
-  height: 30px;
+  height: 27px;
   text-align: center;
   cursor: pointer;
 }
@@ -497,6 +521,7 @@ main {
 @media screen and (min-width: 769px) {
   .footer_sns_button_list {
     display: flex;
+    height: 40px;
   }
 }
 
